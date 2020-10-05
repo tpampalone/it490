@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+.split {
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  width: 60%;
+  left: 0;
+  background: #FFF;
+}
+
+.split.right {
+  width: 40%;
+  right: 0;
+  background: #adb5bd;
+}
+
+
+.text {
+  width: 600px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.welcome-text {
+ font-size: 4.5em;
+ text-transform: uppercase;
+ font-weight: 700;
+ line-height: 1;
+ letter-spacing: 5px;
+  margin-top: 10px;
+}
+
+.services-text {
+
+}
+
+#carouselOurServices {
+  margin-top: 30%;
+}
