@@ -59,8 +59,8 @@
 
     </div>
 
-    <!-- Pop-up (modal) sign up form-->
-    <form class="modal fade" id="signupForm" action="">
+    <!-- Pop-up (modal) sign up form METHOD POST-->
+    <form class="modal fade" id="signupForm" action="" method="post">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
 
@@ -86,11 +86,21 @@
             <div class="md-form mb-3">
               <input type="password" class="form-control validate" placeholder="Password" id="password">
             </div>
+
+            <!-- School Dropdown menu -->
+            <div class="md-form mb-3">
+              <select class="form-control" id="school">
+                <option value="none">Select Your School</option>
+                <option value="sample_school_1">Sample Prep School 1</option>
+                <option value="sample_school_2">Sample Prep School 2</option>
+                <option value="sample_school_3">Sample Elementary School</option>
+              </select>
+            </div>
           </div>
 
           <div class="modal-footer d-flex justify-content-center">
             <!-- Get started button -->
-            <button type="submit" class="btn btn-primary">Get started</button>
+            <button type="submit" class="btn btn-primary" formmethod="post">Get started</button>
             <!-- Sign in button -->
             <button class="btn btn-outline-secondary" data-dismiss="modal" aria-label="close" data-toggle="modal" data-target="#signinForm">Already have an account? Login</button>
           </div>
@@ -99,8 +109,8 @@
       </div>
     </form>
 
-    <!-- Pop-up (modal) sign in form -->
-    <form class="modal fade" id="signinForm">
+    <!-- Pop-up (modal) sign in form METHOD POST-->
+    <form class="modal fade" id="signinForm" method="post">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
 
@@ -123,7 +133,7 @@
 
           <div class="modal-footer d-flex justify-content-center">
             <!-- Login button -->
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary" formmethod="post">Login</button>
             <!-- Signup button -->
             <button class="btn btn-outline-secondary" data-dismiss="modal" aria-label="close" data-toggle="modal" data-target="#signupForm">Signup</button>
           </div>
