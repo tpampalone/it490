@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	$_SESSION['first'] = $first;
 	$_SESSION['last'] = $last;
 	$_SESSION['email'] = $email;
-	$_SESSION['pass'] = $pass;
+	$_SESSION['password'] = $userPass;
 	$_SESSION['school'] = $school;
 	
 	header("location: registered.php");
