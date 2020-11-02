@@ -5,14 +5,14 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/7cfe348305.js" crossorigin="anonymous"></script>
     <title>Self-Taught Academia</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">LOGO</a>
+        <a class="navbar-brand" href="#"></a>
         <!-- Login button -->
         <span class="navbar-text">Already have an account? <a href="" data-toggle="modal" data-target="#signinForm">Sign in</a> <i class="fas fa-user-circle"></i></span>
       </div>
@@ -22,12 +22,13 @@
       <!-- Left side -->
       <div class="split left">
         <div class="text">
-          <h1 class="welcome-text">WELCOME TO<br/><b>SELF-TAUGHT ACADEMIA</b></h1><br><br>
+          <h1 class="welcome-text">WELCOME TO<br/><b>SELF-TAUGHT<br/> ACADEMIA</b></h1><br><br>
           <!-- Sign up button -->
           <button href="" class="btn btn-primary mr-3" data-toggle="modal" data-target="#signupForm">Sign Up</button>
         </div>
       </div>
-      <!-- Right side (services section)-->
+      
+<!-- Right side (services section)-->
       <div class="split right">
         <div id="carouselOurServices" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -37,13 +38,13 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="...">
+              <img class="d-block w-100" src="images/services1.png">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="...">
+              <img class="d-block w-100" src="images/services2.png">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="...">
+              <img class="d-block w-100" src="images/services3.png">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselOurServices" role="button" data-slide="prev">
@@ -60,7 +61,7 @@
     </div>
 
     <!-- Pop-up (modal) sign up form METHOD POST-->
-    <form class="modal fade" id="signupForm" action="php/signUp.php" method="post">
+    <form class="modal fade" id="signupForm" action="rabbitmq/rabbitSignUp.php" method="post">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
 
@@ -110,7 +111,7 @@
     </form>
 
     <!-- Pop-up (modal) sign in form METHOD POST-->
-    <form class="modal fade" id="signinForm" method="post">
+    <form class="modal fade" id="signinForm" action="rabbitmq/rabbitmqLogin.php" formmethod="post">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
 
@@ -156,6 +157,7 @@
 
 
   </body>
-  </body>
+
 
 </html>
+
