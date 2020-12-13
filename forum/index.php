@@ -15,7 +15,7 @@ $result = mysql_query($sql);
 
 if(!$result)
 {
-	echo 'The categories could ont be displaed, please try again later.';
+	echo 'The categories could not be displayed, please try again later.';
 }
 else
 {
