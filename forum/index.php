@@ -1,5 +1,5 @@
 <?php
-//overview.php
+//index.php
 
 //include 'connect.php'; /*need to figure out what file this is*/
 include 'header.php';
