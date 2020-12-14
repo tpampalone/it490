@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<?php
+  session_start();
+  include '../rabbitmq/registered.php';
+  include '../rabbitmq/welcome.php';
+  echo $_SESSION['first'];
+?>
+   <head>
+	<meta charset="utf-8">
+	<title>Dashboard - Self-Taught Academia</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/dashboard.css">
+   </head>
+
+   <body>
+   	<div class="container-fluid">
+   	    <div class="row">
+   	    	<nav class="col-md-2 d-md-block sidebar">
+   	    	     <div class="sidebar-sticky">
+   	    	     
+   	    	     	<div class="nav flex-column">
+   	    	     	
+   			<li class="nav-item"><h3 class="nav-link disabled">Hello, <span><?php echo $_SESSION['first'] ?></span></h3></li>
+   	    	     	
+   	    	     	<hr>
+   	    	     	     <li class="nav-item">		
+	   	    	     	     <a class="nav-link active" href="#">
+	   	    	     	     Dashboard
+	   	    	     	     </a>
+   	    	     	     </li>
+   	    	     	     <li class="nav-item">		
+	   	    	     	     <a class="nav-link" href="portal.html">
+	   	    	     	     Parent Portal
+	   	    	     	     </a>
+   	    	     	     </li>
+   	    	     	     <li class="nav-item">		
+	   	    	     	     <a class="nav-link" href="learn.html">
+	   	    	     	     Learning Portal
+	   	    	     	     </a>
+   	    	     	     </li>
+   	    	     	     <li class="nav-item">		
+	   	    	     	     <a class="nav-link" href="assess.html">
+	   	    	     	     Assessment
+	   	    	     	     </a>
+   	    	     	     </li>
+   	    	     	     <hr>
+   	    	     	     <li class="nav-item">		
+	   	    	     	     <a class="nav-link" href="#">
+	   	    	     	     Logout
+	   	    	     	     </a>
+   	    	     	     </li>
+   	    	     	</div>
+   	    	     </div>
+   	    	</nav>
+   	    	
+   	    	<!-- Dashboard area -->
+   	    	<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px4">
+   	    	  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+   	    	       <h1>DASHBOARD</h1>
+   	    	</main>
+   	    </div>
+   	</div>
+   	
+   	
+   	
+   <!-- Bootstrap core Javascript -->
+    <!-- JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   </body>
+
+</html>
+
