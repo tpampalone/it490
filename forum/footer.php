@@ -1,5 +1,5 @@
 </div><!-- content -->
-</div><!-- wrapper -->
+</div><!-- split left-->
 <div id="footer">
 </body>
 </html>
